@@ -7,7 +7,17 @@ class IbovedKernel extends Kernel
     public function getRoutes()
     {
         return array(
-            ['GET', '/', 'Iboved\Controller\IndexController:indexAction']
+            ['GET', '/', 'Iboved\Controller\IndexController:indexAction'],
+
+            ['GET', '/about', 'Iboved\Controller\AboutController:getAboutAction'],
+
+  /*          ['GET', '/articles/{id}', 'Spolischook\Controller\ArticleController:getArticleAction'],
+            ['PUT', '/articles/{id}', 'Spolischook\Controller\ArticleController:putArticleAction'],
+            ['POST', '/articles/{id}', 'Spolischook\Controller\ArticleController:postArticleAction'],
+            ['DELETE', '/articles/{id}', 'Spolischook\Controller\ArticleController:deleteArticleAction'],
+
+            ['GET', '/articles', 'Spolischook\Controller\ArticleController:getArticlesAction'],
+            ['POST', '/articles', 'Spolischook\Controller\ArticleController:postArticleAction'],*/
         );
     }
 
