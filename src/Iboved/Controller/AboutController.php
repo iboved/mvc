@@ -12,9 +12,4 @@ class AboutController extends AbstractController
         $about = new About();
         return new Response($this->twig->render('about.html.twig', ['data' => $about->getData()]));
     }
-
-    public function postAboutAction()
-    {
-        return new Response($this->twig->render('about.html.twig'));
-    }
 }

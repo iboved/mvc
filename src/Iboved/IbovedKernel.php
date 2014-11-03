@@ -10,6 +10,7 @@ class IbovedKernel extends Kernel
             ['GET', '/', 'Iboved\Controller\IndexController:indexAction'],
 
             ['GET', '/about', 'Iboved\Controller\AboutController:getAboutAction'],
+            ['GET', '/contact', 'Iboved\Controller\ContactController:getContactAction'],
 
   /*          ['GET', '/articles/{id}', 'Spolischook\Controller\ArticleController:getArticleAction'],
             ['PUT', '/articles/{id}', 'Spolischook\Controller\ArticleController:putArticleAction'],
